@@ -5,7 +5,7 @@
 }
 
 html,body {
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     color: #333;
 }
@@ -154,7 +154,7 @@ background: url(./img/header/BG.png);
     height: 387.313px;
 }
 
-.main-title {
+.about-title {
     font-size: 48px;
     font-weight: 700;
     margin-top: 80px;
@@ -165,6 +165,7 @@ background: url(./img/header/BG.png);
     font-size: 20px;
     font-weight: 400;
     width: 538.457px;
+    line-height: 32px;
 
 }
 
@@ -173,33 +174,56 @@ background: url(./img/header/BG.png);
     font-size: 16px;
     font-weight: 400;
     width: 538.457px;
+    line-height: 26px; 
 }
 
 
-.main-text {
+.about-text {
 display: flex;
 flex-direction: column;
 width: 538.457px;
 gap: 16px 0;
 }
 
-.main-info {
+.about-paragraphs {
     display: flex;
     justify-content: space-between;
 }
 
 
-.main-video {
-    border-radius: 8px;
-    width: 445px;
-    height: 296.332px;
+.about-video {
+  
+}
+
+
+.play-btn {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 445px;
+height: 300px;
+background-image: url("./img/header/video.png");
+background-position: center;
+cursor: pointer;
+}
+
+
+.play-btn span {
+    
+   
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    text-align: center;
     
 }
 
 
-.section-columns {
+.about-columns {
 display: flex;
-justify-content: space-between;
+flex-wrap: wrap;
 gap: 0 100px;
 }
 
@@ -254,6 +278,15 @@ gap: 0 100px;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.info-doc {
+    text-decoration: underline;
+    color: #278AFF;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 .navigation-footer {
