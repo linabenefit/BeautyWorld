@@ -30,6 +30,24 @@ a:hover{
     color: #00BF78;
 }
 
+/* COMPONENTS */
+
+.button {
+    background-color: #FB9475;
+    width: fit-content;
+    padding: 17px 30px;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.button_small{
+    padding: 10px 20px;
+    font-size: 12px;
+}
 
 /* HEADER */
 
@@ -112,19 +130,10 @@ background: url(./img/header/BG.png);
     font-weight: 400;
 }
 
-
-.header-button {
-    background-color: #FB9475;
-    width: fit-content;
-    padding: 17px 30px;
-    border-radius: 24px;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    cursor: pointer;
+.header__button {
     margin-top: 50px;
-}
 
+}
 
 .social {
     display: flex;
@@ -191,10 +200,6 @@ gap: 16px 0;
 }
 
 
-.about-video {
-  
-}
-
 
 .play-btn {
 display: flex;
@@ -258,11 +263,40 @@ gap: 0 100px;
 
 }
 
+/* SERVICES */
 
+.services-title {
+   
+   font-size: 48px;
+   font-weight: 700;
+   margin-top: 80px;
+   margin-bottom: 32px;
+}
 
+.services__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 30px;
+}
 
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    gap: 20px 0;
+}
 
+.card__heading {
+    font-size: 18px;
+    font-weight: 600;
+}
 
+.card__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+}
 
 
 /* FOOTER */
