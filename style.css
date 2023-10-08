@@ -238,10 +238,10 @@ a:hover {
 
 /* SERVICES */
 
+
 .services-title {
   font-size: 48px;
   font-weight: 700;
-  margin-top: 80px;
   margin-bottom: 32px;
 }
 
@@ -273,7 +273,7 @@ a:hover {
 /* PRICES */
 
 .prices {
-  margin-top: 100px;
+  padding-top: 100px;
 }
 
 .prices-title {
@@ -301,6 +301,10 @@ a:hover {
 }
 
 /* COSTS */
+
+.prices {
+  padding-bottom: 100px;
+}
 
 .prices__costs {
     margin-top: 38px ;
@@ -341,6 +345,103 @@ a:hover {
     font-weight: 600;
     
 }
+
+
+
+/* MASTERS */
+
+.masters-title {
+  font-size: 48px;
+  font-weight: 700;
+  
+}
+
+.masters-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.masters-all {
+  display: flex;
+  gap: 0 30px;
+
+}
+
+.master-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.master-card__shadow {
+  display: block;
+  position: relative;
+  width: 255px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.mask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  color: #fff;
+  font-size: 40px;
+  transition: opacity .4s linear;
+  border-radius: 8px;
+
+}
+
+.mask:hover {
+  opacity: 70%;
+  width: 255px;
+  height: 300px;
+  border-radius: 8px;
+
+}
+
+.text-mask {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.master-card__photo {
+  width: 255px;
+  height: 300px;
+  cursor: pointer;
+  
+}
+
+.master-card__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.master-card__post {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.master-card__exp {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
 /* FOOTER */
 .container-footer {
   display: flex;
