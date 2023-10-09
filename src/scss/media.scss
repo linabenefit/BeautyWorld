@@ -1,0 +1,56 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+    .header {
+        background: url(./img/header/BG.png);
+    }
+
+    .header-main {
+        z-index: 2;
+    }
+
+    .header-image {
+        opacity: 0.5;
+    }
+
+    .contact-number {
+        font-size: 12px;
+    }
+
+    .header-contact__desk {
+        text-align: right;
+    }
+
+    .header-logo {
+        text-wrap: nowrap;
+    }
+
+    .navigation-item {
+        text-wrap: nowrap;
+    }
+
+    .navigation-list {
+        gap: 0px 10px;
+    }
+      
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+}

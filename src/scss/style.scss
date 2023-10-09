@@ -11,6 +11,12 @@ body {
   color: #333;
 }
 
+body {
+  min-width: 320px;
+
+}
+
+
 h1,
 h2,
 h3,
@@ -146,7 +152,7 @@ a:hover {
 
 /* MAIN */
 
-.selection-info {
+.about-info {
   width: 1109px;
   height: 387.313px;
 }
@@ -303,7 +309,7 @@ a:hover {
 /* COSTS */
 
 .prices {
-  padding-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .prices__costs {
@@ -349,6 +355,11 @@ a:hover {
 
 
 /* MASTERS */
+
+.masters {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 
 .masters-title {
   font-size: 48px;
