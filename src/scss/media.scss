@@ -1,0 +1,276 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1280px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+
+/* HEADER */
+    .header {
+        background: url(../img/header/BG.png);
+    }
+
+    .header-main {
+        z-index: 2;
+    }
+
+    .header-image {
+        opacity: 0.5;
+    }
+
+    .contact-number {
+        font-size: 12px;
+    }
+
+    .header-contact__desk {
+        text-align: right;
+    }
+
+    .header-logo {
+        text-wrap: nowrap;
+    }
+
+    .navigation-item {
+        text-wrap: nowrap;
+    }
+
+    .navigation-list {
+        gap: 0px 10px;
+    }
+
+    /* ABOUT */
+
+    .about-info {
+        width: 980px;
+    }
+   
+    /* MASTERS */
+
+    .masters-all {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 30px;
+    }
+      
+    /* WORKS */
+    .work-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 30px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+
+    /* HEADER */
+
+    .header-image {
+        opacity: 0.3;
+    }
+    
+    /* ABOUT */
+    
+    .about-paragraphs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .play-btn {
+        margin-top: 50px;
+    }
+
+    .about-columns {
+        margin-top: 300px;
+    }
+
+    /* PRICES */
+    .navigation__list {
+        gap: 0px 15px;
+    }
+
+    .prices__costs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* MASTERS */
+
+    .masters-all {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px 150px;
+        margin-top: 60px;
+    }
+    
+    /* WORKS */
+
+    .works-brand {
+        gap: 0 20px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    /* HEADER */
+
+    .navigation-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-image {
+        opacity: 0;
+    }
+
+
+
+
+    /* ABOUT */
+
+   .paragraph-first {
+    width: 450px;
+   }
+
+   .paragraph-second {
+    width: 450px;
+   }
+
+   .about-columns {
+    margin-top: 400px;
+   }
+
+   .column-icons {
+    margin: 10%;
+   }
+
+
+   /* SERVICES */
+
+   .services {
+    margin-top: 50px;
+   }
+
+   .services__cards {
+    gap: 70px 30px;
+   }
+
+    /* WORKS*/
+
+    .works-brand {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   
+
+    /* CONTACTS*/
+
+    .contacts-block {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 0px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+
+    /* HEADER */
+
+    .header-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-contact {
+        align-items: center;
+    }
+
+    /* ABOUT */
+
+    .paragraph-first {
+        width: 300px;
+    }
+
+    .paragraph-second {
+        width: 300px;
+    }
+
+    .play-btn {
+        width: 320px;
+        height: 215px;
+        border-radius: 8px;
+    }
+
+    .about-paragraphs {
+        display: block;
+    }
+
+    .about-columns {
+        margin-top: 500px;
+    }
+
+    /* PRICES */
+
+    .navigation__list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .cost {
+        display: flex;
+        width: 310px;
+    }
+
+    /* FORM */
+
+    .list-form {
+        width: 320px;
+        height: 292px;
+        padding: 20px 20px;
+    }
+
+    .record-describe {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .username {
+        width: 200px;
+        height: 50px;
+    }
+
+    .telephone {
+        width: 200px;
+        height: 50px;
+        
+    }
+
+    .button_big {
+        padding: 17px 30px;
+        font-size: 14px;
+        width: 200px;
+    }
+
+    .conditions {
+        margin-top: 25px;
+    }
+
+
+    /* FOOTER */
+
+    .navigation-footer {
+        text-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+    }
+
+      
+
+
+
+
+
+}
