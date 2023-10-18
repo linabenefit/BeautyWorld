@@ -1,0 +1,488 @@
+/* COMMON */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+body {
+  min-width: 320px;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #00bf78;
+}
+
+/* COMPONENTS */
+
+.button {
+  background-color: #fb9475;
+  width: fit-content;
+  padding: 17px 30px;
+  border-radius: 24px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.button_small {
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+/* HEADER */
+
+.header {
+  background: url(./img/header/BG.png);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.header-logo {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 0px 28px;
+}
+
+.navigation-link {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.header-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contact-number {
+  font-size: 18px;
+  font-weight: 500;
+  gap: 8px 0;
+}
+
+.header-content {
+  min-height: 510px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  gap: 16px 0;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.header-desk {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header__button {
+  margin-top: 50px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px 0;
+  cursor: pointer;
+}
+
+.header-image {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+}
+
+.header-image img {
+  width: 524px;
+  height: 510px;
+}
+
+/* MAIN */
+
+.about-info {
+  width: 1109px;
+  height: 387.313px;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 32px;
+}
+
+.paragraph-first {
+  font-size: 20px;
+  font-weight: 400;
+  width: 538.457px;
+  line-height: 32px;
+}
+
+.paragraph-second {
+  font-size: 16px;
+  font-weight: 400;
+  width: 538.457px;
+  line-height: 26px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  width: 538.457px;
+  gap: 16px 0;
+}
+
+.about-paragraphs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.play-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 445px;
+  height: 300px;
+  background-image: url("./img/header/video.png");
+  background-position: center;
+  cursor: pointer;
+}
+
+.play-btn span {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  text-align: center;
+}
+
+.about-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 100px;
+}
+
+.column-icons {
+  display: flex;
+  flex-direction: column;
+  width: 296px;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.icons {
+  width: 48px;
+  height: 48px;
+}
+
+.icons-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.icons-text {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* SERVICES */
+
+
+.services-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.services__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  gap: 20px 0;
+}
+
+.card__heading {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+/* PRICES */
+
+.prices {
+  padding-top: 100px;
+}
+
+.prices-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.navigation_names {
+  padding: 0 auto;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 0px 28px;
+  padding-inline-start: 0%;
+  padding-top: 30px;
+}
+
+.navigation__name {
+  list-style: none;
+  display: flex;
+  gap: 0px 28px;
+  font-weight: 500;
+}
+
+/* COSTS */
+
+.prices {
+  margin-bottom: 80px;
+}
+
+.prices__costs {
+    margin-top: 38px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.cost {
+    display: flex;
+    justify-content: space-between;
+    width: 444.125px;
+    margin-bottom: 32px;
+}
+
+.cost__decription {
+    display: flex;
+    flex-direction: column;
+    gap: 10 0;
+
+}
+
+.cost__name {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.cost__sub-name {
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+.cost__price {
+    color: #00BF78;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+
+
+/* MASTERS */
+
+.masters {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.masters-title {
+  font-size: 48px;
+  font-weight: 700;
+  
+}
+
+.masters-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.masters-all {
+  display: flex;
+  gap: 0 30px;
+
+}
+
+.master-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.master-card__shadow {
+  display: block;
+  position: relative;
+  width: 255px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.mask {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  color: #fff;
+  font-size: 40px;
+  transition: opacity .4s linear;
+  border-radius: 8px;
+
+}
+
+.mask:hover {
+  opacity: 70%;
+  width: 255px;
+  height: 300px;
+  border-radius: 8px;
+
+}
+
+.text-mask {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.master-card__photo {
+  width: 255px;
+  height: 300px;
+  cursor: pointer;
+  
+}
+
+.master-card__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.master-card__post {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.master-card__exp {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 16px;
+}
+
+/* FOOTER */
+.container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px 0;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info-doc {
+  text-decoration: underline;
+  color: #278aff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.navigation-footer {
+  list-style: none;
+  display: flex;
+  gap: 0px 28px;
+}
+
+.navigation__footer {
+  font-weight: 400;
+}
