@@ -10,10 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="./css/media.css">
+
+    
+
+    
+
 
 
     <title>Мир красоты</title>
@@ -169,7 +176,7 @@
 </section>
 
 <section>
-<div class="prices">
+    <div class="prices">
     <h1 id="section-prices" class="prices-title">Услуги и цены</h1>
     
     <nav class="navigation__price">
@@ -676,8 +683,7 @@
     
 </div>
 
-</div>
-</div>
+
 </section>
 
 <section class="masters"> 
@@ -763,7 +769,7 @@
     <div class="work-cards">
 
         <div class="work-card__scale">
-            <a class="work-card__shadow" href="#">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Повседневный и вечерний макияж" href="./img/works/make-up.png">
                 <img src="./img/works/make-up.png" alt="Make Up">
                 <span class="mask-work-card">
                     
@@ -778,7 +784,7 @@
         </div>
 
         <div class="work-card__scale">
-            <a class="work-card__shadow" href="#">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Причёски" href="./img/works/hairstyle.png">
                 <img src="./img/works/hairstyle.png" alt="Hairstyle">
                 <span class="mask-work-card">
                     
@@ -793,7 +799,7 @@
         </div>
 
         <div class="work-card__scale">
-            <a class="work-card__shadow" href="#">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Маникюр и покрытие" href="./img/works/nails.png">
                 <img class="work-card-nail" src="./img/works/nails.png" alt="Nails">
                 <span class="mask-work-card">
                     
@@ -808,7 +814,7 @@
         </div>
 
         <div class="work-card__scale">
-            <a class="work-card__shadow" href="#">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Окрашивания любой сложности" href="./img/works/coloring.png">
                 <img src="./img/works/coloring.png" alt="Coloring">
                 <span class="mask-work-card">
                     
@@ -902,6 +908,11 @@
 </div>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
 <script src="./js/index.js"></script>
+
+
+
 </body>
 </html>
