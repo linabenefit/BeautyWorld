@@ -74,7 +74,7 @@ a:hover {
   background: url(../img/header/BG.png);
 }
 
-.header-top {
+.header-top__banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -295,8 +295,14 @@ a:hover {
   font-weight: 700;
 }
 
-.navigation_names {
+.navigation__price {
   padding: 0 auto;
+ 
+}
+
+.navigation__name {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .navigation__list {
@@ -304,15 +310,10 @@ a:hover {
   display: flex;
   gap: 0px 28px;
   padding-inline-start: 0%;
-  padding-top: 30px;
+  margin-top: 30px;
 }
 
-.navigation__name {
-  list-style: none;
-  display: flex;
-  gap: 0px 28px;
-  font-weight: 500;
-}
+
 
 /* COSTS */
 
@@ -322,10 +323,25 @@ a:hover {
 
 .prices__costs {
     margin-top: 38px ;
-    display: flex;
-    justify-content: space-between;
+    display: none;
     
 }
+
+.prices__costs:nth-of-type(2n + 1) {
+  background-color: #fff
+
+}
+
+.prices__costs:nth-of-type(2n) {
+  background-color: #F8F6F7
+
+}
+
+.prices__costs:target {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .cost {
     display: flex;
