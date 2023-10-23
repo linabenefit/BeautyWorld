@@ -75,6 +75,10 @@ a:hover {
   background: url(../img/header/BG.png);
 }
 
+.header-top {
+  max-width: 1110px;
+}
+
 .header-top__banner {
   display: flex;
   justify-content: space-between;
@@ -322,6 +326,7 @@ a:hover {
   margin-bottom: 80px;
 }
 
+
 .prices__costs {
     margin-top: 38px ;
     display: none;
@@ -329,12 +334,12 @@ a:hover {
 }
 
 .prices__costs:nth-of-type(2n + 1) {
-  background-color: #fff
+  background-color: #fff;
 
 }
 
 .prices__costs:nth-of-type(2n) {
-  background-color: #F8F6F7
+  background-color: #F8F6F7;
 
 }
 
@@ -484,17 +489,35 @@ a:hover {
 
 /* WORKS */
 
+.container-works {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 .works-title {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 52px;
 }
 
+.works__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrows {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  gap: 16px 0;
+  
+}
 
 .work-cards {
   display: flex;
   justify-content: center;
   gap: 0 30px;
+  min-width: 0;
   
 }
 

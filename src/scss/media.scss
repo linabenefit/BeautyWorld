@@ -103,10 +103,8 @@
     .header-top__banner {
         position: relative;
         padding: 16px 20px;
+        width: 100%;
         gap: 0 520px;
-        
-        
-        
     }
 
     .header__burger {
@@ -181,6 +179,7 @@
         background-color: #fff;
         padding: 60px 0 0 0;
         
+       
         
     }
 
@@ -193,9 +192,8 @@
         display: block;
         position: relative;
         z-index: 3;
-        text-align: center;
-        margin-left: -275px;
-        margin-top: 100px;
+        text-align: left;
+        margin-top: 60px;
         
         
         
@@ -285,6 +283,13 @@
 
     /* HEADER */
 
+    .header-top__banner {
+        position: relative;
+        padding: 16px 20px;
+        width: 100%;
+        gap: 0 220px;
+    }
+
     .navigation-list{
         display: flex;
         flex-direction: column;
@@ -294,6 +299,7 @@
         opacity: 0;
     }
 
+    
 
 
 

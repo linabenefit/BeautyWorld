@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     
     <link rel="stylesheet" href="./css/style.css">
 
@@ -48,7 +50,7 @@
                 <li class="navigation-item"><a href="#section-works" class="navigation-link">Наши работы</a></li>
                 <li class="navigation-item"><a href="#section-about" class="navigation-link">О нас</a></li>
                 <li class="navigation-item"><a href="#section-contacts" class="navigation-link">Контакты</a></li>
-        </ul>
+            </ul>
         </nav>
 
 
@@ -84,7 +86,7 @@
 </header>
 
 <main>
-<div class="container">
+<div class="container"> 
     
 <section>
     <div class="about-info">
@@ -685,7 +687,7 @@
 
 
 </section>
-
+</div>
 <section class="masters"> 
     <div class="container">
         <h1 id="section-masters" class="masters-title">Мастера</h1>
@@ -762,12 +764,28 @@
 
 <section class="Our-works">
 
-    <div class="container">
-        <h1 id="section-works" class="works-title">Наши работы</h1>
+    <div class="container-works">
+        <div class="works__top">
+            <h1 id="section-works" class="works-title">Наши работы</h1>
+        <div class="arrows">
+            <div>
+                <img  src="./img/works/arrow_left.png" alt="arrow_left"> 
+            </div>
+
+            <div>
+                <img src="img/works/arrow_left.png" alt="arrow_right">
+            </div>
+        </div>
+        </div>
     </div>
 
     <div class="work-cards">
 
+        <div class="image-slider__slide swiper-container">
+        <div class="image-slider__slide swiper-wrapper">
+
+        <div class="image-slider__slide swiper-slide">
+        <div class="image-slider__image">
         <div class="work-card__scale">
             <a class="work-card__shadow" data-fancybox="gallery" data-caption="Повседневный и вечерний макияж" href="./img/works/make-up.png">
                 <img src="./img/works/make-up.png" alt="Make Up">
@@ -782,7 +800,12 @@
                 </span>
             </a>
         </div>
+        </div>
+        </div>
+        
 
+        <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
         <div class="work-card__scale">
             <a class="work-card__shadow" data-fancybox="gallery" data-caption="Причёски" href="./img/works/hairstyle.png">
                 <img src="./img/works/hairstyle.png" alt="Hairstyle">
@@ -797,7 +820,11 @@
                 </span>
             </a>
         </div>
+    </div>
+</div>
 
+<div class="image-slider__slide swiper-slide">
+    <div class="image-slider__image">
         <div class="work-card__scale">
             <a class="work-card__shadow" data-fancybox="gallery" data-caption="Маникюр и покрытие" href="./img/works/nails.png">
                 <img class="work-card-nail" src="./img/works/nails.png" alt="Nails">
@@ -812,7 +839,11 @@
                 </span>
             </a>
         </div>
+    </div>
+</div>
 
+<div class="image-slider__slide swiper-slide">
+    <div class="image-slider__image">
         <div class="work-card__scale">
             <a class="work-card__shadow" data-fancybox="gallery" data-caption="Окрашивания любой сложности" href="./img/works/coloring.png">
                 <img src="./img/works/coloring.png" alt="Coloring">
@@ -827,7 +858,11 @@
                 </span>
             </a>
         </div>
+    </div>
+</div>
 
+    </div>
+    </div>
     </div>
 
     
@@ -909,6 +944,7 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 <script src="./js/index.js"></script>
 
