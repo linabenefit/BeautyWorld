@@ -493,7 +493,7 @@ a:hover {
   display: flex;
   justify-content: center;
   gap: 0 30px;
-  min-width: 0;
+  min-width: 0px;
 }
 
 .works-subtitle {
@@ -713,4 +713,30 @@ a:hover {
 
 .navigation__footer {
   font-weight: 400;
+}
+
+/* FORMS */
+.popup__main {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup {
+  &__area {
+    display: block;
+    margin: 15px 0;
+    width: 250px;
+    border: 1px solid #f8f6f7;
+    border-radius: 8px;
+    padding: 10px 15px;
+  }
+
+  &__button {
+    display: block;
+    margin: 15px 0;
+  }
 }

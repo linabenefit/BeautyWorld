@@ -10,7 +10,7 @@ const webpackStream = require("webpack-stream");
 const rename = require("gulp-rename");
 
 function buildSass() {
-  return src("src/scss/**/*.scss")
+  return src("src/scss//*.scss")
     .pipe(sourcemaps.init())
     .pipe(sass({ includePaths: ["./node_modules"] }).on("error", sass.logError))
     .pipe(
@@ -29,7 +29,7 @@ function buildSass() {
 }
 
 function buildHtml() {
-  return src("src/**/*.html").pipe(dest("dist")).pipe(browserSync.stream());
+  return src("src//*.html").pipe(dest("dist")).pipe(browserSync.stream());
 }
 
 function buildJs() {
@@ -42,7 +42,7 @@ function buildJs() {
 }
 
 function copy() {
-  return src(["src/img/**/*.*"]).pipe(dest("dist/img"));
+  return src(["src/img//*.*"]).pipe(dest("dist/img"));
 }
 
 function cleanDist() {
@@ -50,8 +50,8 @@ function cleanDist() {
 }
 
 function serve() {
-  watch(["src/js/**/*.js", "!src/js/**/*.min.js"], buildSass);
-  watch("src/**/*.html", buildHtml);
+  watch(["src/js/**/*.js", "!src/js/**/*.min.js"], buildJs);
+  watch("src//*.html", buildHtml);
   watch("src/js/**/*.js", buildJs);
 }
 
@@ -71,7 +71,4 @@ exports.build = series(
   cleanDist,
   parallel(buildSass, buildHtml, copy, buildJs)
 );
-exports.default = series(
-  series(buildSass, buildJs),
-  parallel(createDevServer, serve)
-);
+exports.default = series([buildSass, buildJs], parallel(browserSync, serve));
