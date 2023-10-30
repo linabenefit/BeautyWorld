@@ -1,4 +1,5 @@
 @import "./variables";
+@import "./libs";
 
 /* COMMON */
 
@@ -305,6 +306,10 @@ a:hover {
   font-weight: 500;
 }
 
+.navigation__name.active {
+  text-decoration: underline;
+}
+
 .navigation__list {
   list-style: none;
   display: flex;
@@ -319,22 +324,19 @@ a:hover {
   margin-bottom: 80px;
 }
 
+.tabs__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
+
 .prices__costs {
   margin-top: 38px;
   display: none;
 }
 
-.prices__costs:nth-of-type(2n + 1) {
-  background-color: #fff;
-}
-
-.prices__costs:nth-of-type(2n) {
-  background-color: #f8f6f7;
-}
-
-.prices__costs:target {
-  display: flex;
-  justify-content: space-between;
+.prices__costs.active {
+  display: block;
 }
 
 .cost {
@@ -489,11 +491,35 @@ a:hover {
   gap: 16px 0;
 }
 
+.arrow_right {
+  transform: scale(-1, 1);
+}
+
+.slider-prev {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.slider-prev:hover {
+  background-color: #f8f6f7;
+}
+
+.slider-next {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+.slider-next:hover {
+  background-color: #f8f6f7;
+}
+
 .work-cards {
   display: flex;
   justify-content: center;
   gap: 0 30px;
-  min-width: 0px;
 }
 
 .works-subtitle {
@@ -716,27 +742,119 @@ a:hover {
 }
 
 /* FORMS */
-.popup__main {
-  width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .popup {
-  &__area {
-    display: block;
-    margin: 15px 0;
-    width: 250px;
-    border: 1px solid #f8f6f7;
-    border-radius: 8px;
-    padding: 10px 15px;
+  &__sign-up {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+    display: none;
   }
 
-  &__button {
-    display: block;
-    margin: 15px 0;
+  &__sign-up.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    color: #5b5b5b;
+    cursor: pointer;
+  }
+
+  &__main {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f6f7;
+    padding: 60px 0;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.popup__form input {
+  display: block;
+  margin: 20px 0;
+  width: 350px;
+  border: 1px solid #f8f6f7;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.popup__form select {
+  display: block;
+  margin: 20px 0;
+  width: 350px;
+  border: 1px solid #f8f6f7;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.phone:invalid {
+  border: 1px solid red;
+}
+
+.loader {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.success-message {
+  margin-top: 10px;
+  color: green;
+}
+
+/* ALL BUTTONS */
+
+.popup {
+  &__sign-up-manicure {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+    display: none;
+  }
+
+  &__sign-up-manicure.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
