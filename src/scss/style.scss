@@ -1,5 +1,5 @@
-@import './variables';
-
+@import "./variables";
+@import "./libs";
 
 /* COMMON */
 
@@ -16,9 +16,7 @@ body {
 
 body {
   min-width: 320px;
-
 }
-
 
 h1,
 h2,
@@ -257,7 +255,6 @@ a:hover {
 
 /* SERVICES */
 
-
 .services-title {
   font-size: 48px;
   font-weight: 700;
@@ -302,12 +299,15 @@ a:hover {
 
 .navigation__price {
   padding: 0 auto;
- 
 }
 
 .navigation__name {
   font-size: 14px;
   font-weight: 500;
+}
+
+.navigation__name.active {
+  text-decoration: underline;
 }
 
 .navigation__list {
@@ -318,71 +318,56 @@ a:hover {
   margin-top: 30px;
 }
 
-
-
 /* COSTS */
 
 .prices {
   margin-bottom: 80px;
 }
 
+.tabs__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+}
 
 .prices__costs {
-    margin-top: 38px ;
-    display: none;
-    
+  margin-top: 38px;
+  display: none;
 }
 
-.prices__costs:nth-of-type(2n + 1) {
-  background-color: #fff;
-
+.prices__costs.active {
+  display: block;
 }
-
-.prices__costs:nth-of-type(2n) {
-  background-color: #F8F6F7;
-
-}
-
-.prices__costs:target {
-  display: flex;
-  justify-content: space-between;
-}
-
 
 .cost {
-    display: flex;
-    justify-content: space-between;
-    width: 444.125px;
-    margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  width: 444.125px;
+  margin-bottom: 32px;
 }
 
 .cost__decription {
-    display: flex;
-    flex-direction: column;
-    gap: 10 0;
-
+  display: flex;
+  flex-direction: column;
+  gap: 10 0;
 }
 
 .cost__name {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 .cost__sub-name {
-    font-size: 14px;
-    font-weight: 400;
-    
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .cost__price {
-    color: #00BF78;
-    font-size: 20px;
-    font-weight: 600;
-    
+  color: #00bf78;
+  font-size: 20px;
+  font-weight: 600;
 }
-
-
 
 /* MASTERS */
 
@@ -391,14 +376,12 @@ a:hover {
   margin-bottom: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #F8F6F7;
-
+  background-color: #f8f6f7;
 }
 
 .masters-title {
   font-size: 48px;
   font-weight: 700;
-  
 }
 
 .masters-subtitle {
@@ -411,7 +394,6 @@ a:hover {
 .masters-all {
   display: flex;
   gap: 0 30px;
-
 }
 
 .master-card {
@@ -440,13 +422,12 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   color: #fff;
   font-size: 40px;
-  transition: opacity .4s linear;
+  transition: opacity 0.4s linear;
   border-radius: 8px;
-
 }
 
 .mask:hover {
@@ -454,7 +435,6 @@ a:hover {
   width: 255px;
   height: 300px;
   border-radius: 8px;
-
 }
 
 .text-mask {
@@ -466,7 +446,6 @@ a:hover {
   width: 255px;
   height: 300px;
   cursor: pointer;
-  
 }
 
 .master-card__name {
@@ -510,15 +489,37 @@ a:hover {
   display: flex;
   justify-content: end;
   gap: 16px 0;
-  
+}
+
+.arrow_right {
+  transform: scale(-1, 1);
+}
+
+.slider-prev {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.slider-prev:hover {
+  background-color: #f8f6f7;
+}
+
+.slider-next {
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+}
+.slider-next:hover {
+  background-color: #f8f6f7;
 }
 
 .work-cards {
   display: flex;
   justify-content: center;
   gap: 0 30px;
-  min-width: 0;
-  
 }
 
 .works-subtitle {
@@ -527,17 +528,13 @@ a:hover {
   text-align: center;
   margin-top: 100px;
   margin-bottom: 70px;
-
 }
 
 .works-brand {
   display: flex;
   justify-content: center;
   gap: 0 60px;
-  
 }
-
-
 
 .loupe-icon {
   width: 48px;
@@ -568,7 +565,6 @@ a:hover {
   transform: scale(1.1);
 }
 
-
 .work-card__shadow {
   display: block;
   position: relative;
@@ -576,7 +572,6 @@ a:hover {
   height: 338px;
   border-radius: 8px;
   transition: 1s;
-  
 }
 
 .mask-work-card {
@@ -585,13 +580,12 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, .5);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   color: #fff;
   font-size: 40px;
-  transition: opacity .4s linear;
+  transition: opacity 0.4s linear;
   border-radius: 8px;
-
 }
 
 .mask-work-card:hover {
@@ -599,7 +593,6 @@ a:hover {
   width: 338px;
   height: 338px;
   border-radius: 8px;
-  
 }
 
 .work-card-nail {
@@ -611,16 +604,14 @@ a:hover {
 
 .contacts-block {
   display: flex;
-  justify-content: space-between
- 
+  justify-content: space-between;
 }
 
 .container-contacts {
-  background-color: #F8F6F7;
+  background-color: #f8f6f7;
   padding-top: 40px;
   padding-bottom: 40px;
   margin-top: 100px;
-
 }
 
 .title-contacts {
@@ -646,7 +637,6 @@ a:hover {
 .social-sub-description {
   font-size: 12px;
   font-weight: 400;
-
 }
 
 .icons-contact {
@@ -663,8 +653,6 @@ a:hover {
 
 /* FORM */
 
-
-
 .list-form {
   width: 445px;
   height: 406px;
@@ -673,10 +661,8 @@ a:hover {
   flex-direction: column;
   padding: 40px 40px;
   background-color: #fff;
-  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1); 
-  
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
-
 
 .title-form {
   font-size: 18px;
@@ -694,7 +680,7 @@ a:hover {
 .username {
   width: 375px;
   height: 46px;
-  border-color: #F8F6F7;
+  border-color: #f8f6f7;
   border-radius: 8px;
   border-style: solid;
   margin-bottom: 20px;
@@ -703,18 +689,16 @@ a:hover {
 .telephone {
   width: 375px;
   height: 46px;
-  border-color: #F8F6F7;
+  border-color: #f8f6f7;
   border-radius: 8px;
   border-style: solid;
   margin-bottom: 20px;
 }
 
-
 .conditions {
   margin-top: 16px;
   font-size: 12px;
   font-weight: 300;
-
 }
 
 .personal-data {
@@ -755,4 +739,122 @@ a:hover {
 
 .navigation__footer {
   font-weight: 400;
+}
+
+/* FORMS */
+
+.popup {
+  &__sign-up {
+    position: fixed;
+    top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+    display: none;
+  }
+
+  &__sign-up.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 25px;
+    color: #5b5b5b;
+    cursor: pointer;
+  }
+
+  &__main {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f6f7;
+    padding: 60px 0;
+    border-radius: 10px;
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+  }
+}
+
+.popup__form input {
+  display: block;
+  margin: 20px 0;
+  width: 350px;
+  border: 1px solid #f8f6f7;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.popup__form select {
+  display: block;
+  margin: 20px 0;
+  width: 350px;
+  border: 1px solid #f8f6f7;
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.phone:invalid {
+  border: 1px solid red;
+}
+
+.loader {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.success-message {
+  margin-top: 10px;
+  color: green;
+}
+
+/* ALL BUTTONS */
+
+.popup {
+  &__sign-up-manicure {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 5;
+    display: none;
+  }
+
+  &__sign-up-manicure.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
