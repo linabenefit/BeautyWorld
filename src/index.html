@@ -10,10 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
     
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     
     <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="./css/media.css">
+
+    
+
+    
+
+
 
     <title>Мир красоты</title>
     
@@ -23,24 +33,32 @@
 
 <header class="header">
 
-   <div class="container">
+   <div class="container"> 
 
     <div class="header-top">
+        <div class="header-top__banner">
         <a class="header-logo" href="index.html">Мир красоты</a>
+
+        <div class="header__burger">
+            <span></span>
+        </div>
 
         <nav class="navigation">
             <ul class="navigation-list">
-                <li class="navigation-item"><a href="#" class="navigation-link">Услуги и цены</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">Мастера</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">Наши работы</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">О нас</a></li>
-                <li class="navigation-item"><a href="#" class="navigation-link">Контакты</a></li>
-        </ul>
+                <li class="navigation-item"><a href="#section-prices" class="navigation-link">Услуги и цены</a></li>
+                <li class="navigation-item"><a href="#section-masters" class="navigation-link">Мастера</a></li>
+                <li class="navigation-item"><a href="#section-works" class="navigation-link">Наши работы</a></li>
+                <li class="navigation-item"><a href="#section-about" class="navigation-link">О нас</a></li>
+                <li class="navigation-item"><a href="#section-contacts" class="navigation-link">Контакты</a></li>
+            </ul>
         </nav>
+
+
 
         <div class="header-contact">
             <a class="contact-number" href="tel:84996861762">8-(499)-686-17-62</a>
             <span class="header-contact__desk">С 10.00 до 19.00 без выходных</span>
+        </div>
         </div>
 
     </div>
@@ -62,16 +80,17 @@
             <img src="./img/header/vk.png" alt="">
             <img src="img/header/youtube.png" alt="">
         </div>
-   </div>
-
-
+    </div>
+</div>
+</div>
 </header>
 
-<main class="container">
+<main>
+<div class="container"> 
     
 <section>
     <div class="about-info">
-        <h1 class="about-title">О салоне</h1>
+        <h1 id="section-about" class="about-title">О салоне</h1>
         <div class="about-paragraphs">
             <div class="about-text">
                 <p class="paragraph-first">Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа</p>
@@ -111,9 +130,11 @@
     </div>
 
 </div>
+</section>
 
+<section>
 <div class="services">
-    <h1 class="services-title">Популярные услуги</h1>
+    <h1 id="section-services" class="services-title">Популярные услуги</h1>
 
 <div class="services__cards">
     <div class="card">
@@ -154,23 +175,25 @@
 
 </div>
 </div>
+</section>
 
-<div class="prices">
-    <h1 class="prices-title">Услуги и цены</h1>
+<section>
+    <div class="prices">
+    <h1 id="section-prices" class="prices-title">Услуги и цены</h1>
     
-    <nav class="navigation navigation_names">
+    <nav class="navigation__price">
         <ul class="navigation__list">
-            <li class="navigation-item"><a href="#" class="navigation__name">Стрижка и укладка</a></li>
-            <li class="navigation-item"><a href="#" class="navigation__name">Косметология</a></li>
-            <li class="navigation-item"><a href="#" class="navigation__name">Маникюр и педикюр</a></li>
-            <li class="navigation-item"><a href="#" class="navigation__name">Макияж</a></li>
-            <li class="navigation-item"><a href="#" class="navigation__name">Брови и ресницы</a></li>
-            <li class="navigation-item"><a href="#" class="navigation__name">Массаж</a></li>
+            <li class="navigation__tab"><a href="#tab01" class="navigation__name">Стрижка и укладка</a></li>
+            <li class="navigation__tab"><a href="#tab02" class="navigation__name">Косметология</a></li>
+            <li class="navigation__tab"><a href="#tab03" class="navigation__name">Маникюр и педикюр</a></li>
+            <li class="navigation__tab"><a href="#tab04" class="navigation__name">Макияж</a></li>
+            <li class="navigation__tab"><a href="#tab05" class="navigation__name">Брови и ресницы</a></li>
+            <li class="navigation__tab"><a href="#tab06" class="navigation__name">Массаж</a></li>
         </ul>
     </nav>
 
 
-<div class="prices__costs">
+<div id="tab01" class="prices__costs">
 
     <div class="left-column">
         <div class="cost">
@@ -252,82 +275,651 @@
     
 </div>
 
-</div>
+<div id="tab02" class="prices__costs">
 
-<div class="masters">
-    <h1 class="masters-title">Мастера</h1>
-    <p class="masters-subtitle">Дружная команда настоящих профессионалов</p>
+    <div class="left-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Женская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
     
-    <div class="masters-all">
-
-        <div class="master-card">
-
-            <a class="master-card__shadow" href="#">
-                <img class="master-card__photo" src="./img/masters/Irina.png" alt="Elena">
-                <span class="mask">
-                    
-                    <p class="text-mask">Записаться к мастеру</p>
-                </span>
-            </a>
-            
-            <span class="master-card__name">Краснова Ирина</span>
-            <span class="master-card__post">Мастер ногтевого сервиса</span>
-            <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            <span class="cost__price">1200 ₽</span>
         </div>
-
-        <div class="master-card">
-
-            <a class="master-card__shadow" href="#">
-                <img class="master-card__photo" src="./img/masters/Janna.png" alt="Janna">
-                <span class="mask">
-                    
-                    <p class="text-mask">Записаться к мастеру</p>
-                </span>
-            </a>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Мужская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
             
-            <span class="master-card__name">Калилова Жанна</span>
-            <span class="master-card__post">Визажист-стилист</span>
-            <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            <span class="cost__price">1200 ₽</span>
         </div>
-
-        <div class="master-card">
-
-            <a class="master-card__shadow" href="#">
-                <img class="master-card__photo" src="./img/masters/Alina.png" alt="Alina">
-                <span class="mask">
-                    
-                    <p class="text-mask">Записаться к мастеру</p>
-                </span>
-            </a>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Детский Стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
             
-            <span class="master-card__name">Киселева Алина</span>
-            <span class="master-card__post">Парикмахер</span>
-            <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            <span class="cost__price">1200 ₽</span>
         </div>
-
-        <div class="master-card">
-
-            <a class="master-card__shadow" href="#">
-                <img class="master-card__photo" src="./img/masters/Elena.png" alt="Elena">
-                <span class="mask">
-                    
-                    <p class="text-mask">Записаться к мастеру</p>
-                </span>
-            </a>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Креативный стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
             
-            <span class="master-card__name">Иванова Елена</span>
-            <span class="master-card__post">Мастер ногтевого сервиса</span>
-            <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            <span class="cost__price">1200 ₽</span>
         </div>
 
     </div>
 
+    <div class="right-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Стрижка бороды и усов</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Экспресс укладка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Укладка дневная</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Прическа вечернаяя (свадебная)</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">3000 ₽</span>
+        </div>
 
-
-
+    </div>
+    
 </div>
 
+<div id="tab03" class="prices__costs">
+
+    <div class="left-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Женская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+    
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Мужская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Детский Стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Креативный стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+
+    </div>
+
+    <div class="right-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Стрижка бороды и усов</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Экспресс укладка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Укладка дневная</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Прическа вечернаяя (свадебная)</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">3000 ₽</span>
+        </div>
+
+    </div>
+    
+</div>
+
+<div id="tab04" class="prices__costs">
+
+    <div class="left-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Женская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+    
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Мужская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Детский Стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Креативный стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+
+    </div>
+
+    <div class="right-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Стрижка бороды и усов</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Экспресс укладка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Укладка дневная</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Прическа вечернаяя (свадебная)</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">3000 ₽</span>
+        </div>
+
+    </div>
+    
+</div>
+
+<div id="tab05" class="prices__costs">
+
+    <div class="left-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Женская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+    
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Мужская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Детский Стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Креативный стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+
+    </div>
+
+    <div class="right-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Стрижка бороды и усов</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Экспресс укладка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Укладка дневная</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Прическа вечернаяя (свадебная)</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">3000 ₽</span>
+        </div>
+
+    </div>
+    
+</div>
+
+<div id="tab06" class="prices__costs">
+
+    <div class="left-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Женская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+    
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Мужская стрижка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Детский Стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Креативный стиль</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+
+    </div>
+
+    <div class="right-column">
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Стрижка бороды и усов</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Экспресс укладка</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Укладка дневная</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">1200 ₽</span>
+        </div>
+    
+        <div class="cost">
+            <div class="cost__description">
+                <h3 class="cost__name">Прическа вечернаяя (свадебная)</h3>
+                <span class="cost__sub-name">Короткие волосы</span>
+            </div>
+            
+            <span class="cost__price">3000 ₽</span>
+        </div>
+
+    </div>
+    
+</div>
+
+
 </section>
+</div>
+<section class="masters"> 
+    <div class="container">
+        <h1 id="section-masters" class="masters-title">Мастера</h1>
+        <p class="masters-subtitle">Дружная команда настоящих профессионалов</p>
+        
+        <div class="masters-all">
+    
+            <div class="master-card">
+    
+                <a class="master-card__shadow" href="#">
+                    <img class="master-card__photo" src="./img/masters/Irina.png" alt="Elena">
+                    <span class="mask">
+                        
+                        <p class="text-mask">Записаться к мастеру</p>
+                    </span>
+                </a>
+                
+                <span class="master-card__name">Краснова Ирина</span>
+                <span class="master-card__post">Мастер ногтевого сервиса</span>
+                <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            </div>
+    
+            <div class="master-card">
+    
+                <a class="master-card__shadow" href="#">
+                    <img class="master-card__photo" src="./img/masters/Janna.png" alt="Janna">
+                    <span class="mask">
+                        
+                        <p class="text-mask">Записаться к мастеру</p>
+                    </span>
+                </a>
+                
+                <span class="master-card__name">Калилова Жанна</span>
+                <span class="master-card__post">Визажист-стилист</span>
+                <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            </div>
+    
+            <div class="master-card">
+    
+                <a class="master-card__shadow" href="#">
+                    <img class="master-card__photo" src="./img/masters/Alina.png" alt="Alina">
+                    <span class="mask">
+                        
+                        <p class="text-mask">Записаться к мастеру</p>
+                    </span>
+                </a>
+                
+                <span class="master-card__name">Киселева Алина</span>
+                <span class="master-card__post">Парикмахер</span>
+                <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            </div>
+    
+            <div class="master-card">
+    
+                <a class="master-card__shadow" href="#">
+                    <img class="master-card__photo" src="./img/masters/Elena.png" alt="Elena">
+                    <span class="mask">
+                        
+                        <p class="text-mask">Записаться к мастеру</p>
+                    </span>
+                </a>
+                
+                <span class="master-card__name">Иванова Елена</span>
+                <span class="master-card__post">Мастер ногтевого сервиса</span>
+                <span class="master-card__exp">ОПЫТ РАБОТЫ 5 ЛЕТ</span>
+            </div>
+    
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="Our-works">
+
+    <div class="container-works">
+        <div class="works__top">
+            <h1 id="section-works" class="works-title">Наши работы</h1>
+        <div class="arrows">
+            <div>
+                <img  src="./img/works/arrow_left.png" alt="arrow_left"> 
+            </div>
+
+            <div>
+                <img src="img/works/arrow_left.png" alt="arrow_right">
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="work-cards">
+
+        <div class="image-slider__slide swiper-container">
+        <div class="image-slider__slide swiper-wrapper">
+
+        <div class="image-slider__slide swiper-slide">
+        <div class="image-slider__image">
+        <div class="work-card__scale">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Повседневный и вечерний макияж" href="./img/works/make-up.png">
+                <img src="./img/works/make-up.png" alt="Make Up">
+                <span class="mask-work-card">
+                    
+                    <div class="shadow-icon">
+                        <div class="loupe-icon">
+                            <img src="./img/works/loupe.svg" alt="Scale">
+                        </div>
+                        <p class="text-mask">Увеличить</p>
+                    </div>
+                </span>
+            </a>
+        </div>
+        </div>
+        </div>
+        
+
+        <div class="image-slider__slide swiper-slide">
+            <div class="image-slider__image">
+        <div class="work-card__scale">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Причёски" href="./img/works/hairstyle.png">
+                <img src="./img/works/hairstyle.png" alt="Hairstyle">
+                <span class="mask-work-card">
+                    
+                    <div class="shadow-icon">
+                        <div class="loupe-icon">
+                            <img src="./img/works/loupe.svg" alt="Scale">
+                        </div>
+                        <p class="text-mask">Увеличить</p>
+                    </div>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="image-slider__slide swiper-slide">
+    <div class="image-slider__image">
+        <div class="work-card__scale">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Маникюр и покрытие" href="./img/works/nails.png">
+                <img class="work-card-nail" src="./img/works/nails.png" alt="Nails">
+                <span class="mask-work-card">
+                    
+                    <div class="shadow-icon">
+                        <div class="loupe-icon">
+                            <img src="./img/works/loupe.svg" alt="Scale">
+                        </div>
+                        <p class="text-mask">Увеличить</p>
+                    </div>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="image-slider__slide swiper-slide">
+    <div class="image-slider__image">
+        <div class="work-card__scale">
+            <a class="work-card__shadow" data-fancybox="gallery" data-caption="Окрашивания любой сложности" href="./img/works/coloring.png">
+                <img src="./img/works/coloring.png" alt="Coloring">
+                <span class="mask-work-card">
+                    
+                    <div class="shadow-icon">
+                        <div class="loupe-icon">
+                            <img src="./img/works/loupe.svg" alt="Scale">
+                        </div>
+                        <p class="text-mask">Увеличить</p>
+                    </div>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+    </div>
+    </div>
+    </div>
+
+    
+        <p class="works-subtitle">Бренды, которые мы используем в работе</p>
+    
+    
+    <div class="works-brand">
+        <img class="Wella" src="./img/works/wella.png" alt="Wella">
+        <img class="Schwarzkopf" src="./img/works/schawarzkopf.png" alt="Schwarzkopf">
+        <img class="TIGI" src="./img/works/tigi.png" alt="TIGI">
+        <img class="Londa" src="./img/works/londa.png" alt="Londa">
+        <img class="NIOXIN" src="./img/works/nioxin.png" alt="NIOXIN">
+
+    </div>
+    
+
+</section>
+
+<section class="container-contacts">
+    <div class="container">
+        <div class="contacts-block">
+            <div class="contacts-info">
+                <h1 id="section-contacts" class="title-contacts">Контакты</h1>
+                
+                <div class="contact-details">
+                    <div class="addresses">
+                        <p>Томск, проспект Ленина, дом 13</p>
+                        <p>8 (499) 686-17-62</p>
+                        <a class="e-mail" href="#">info@more-krasoty.ru</a>
+                    </div>
+    
+            <div class="contacts-media">
+                <p class="social-sub-description">Мы в социальных сетях</p>
+                <div class="icons-contact">
+                    <img src="./img/header/vk.png" alt="vk">
+                    <img src="./img/header/inst.png" alt="inst">
+                    <img src="./img/header/youtube.png" alt="yt">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="contacts-form">
+            <form class="list-form" action="#" method="get" id="form">
+                <p class="title-form">Быстрая запись</p>
+                <p class="record-describe">Наш менеджер перезвонит в течение нескольких минут, уточнит подробности и согласует время.</p>
+                <input class="username" placeholder="Ваше имя" name="Username" type="text" value="Лина">
+                <input class="telephone" placeholder="+7 (___) ___-__-__" name="Usertel" type="text" value="8-952-891-43-48">
+                <button class="button button_big" type="submit" id="form-button">Записаться</button>
+                <p class="conditions">Нажимая на кнопку вы соглашаетесь с <a class="personal-data" href="#">обработкой персональных данных</a></p>
+            </form>
+        </div>
+        </div>
+
+</div>
+</section>
+
 </main>
 
 <footer class="footer">
@@ -350,3 +942,13 @@
 </div>
 </div>
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="./js/index.js"></script>
+
+
+
+</body>
+</html>

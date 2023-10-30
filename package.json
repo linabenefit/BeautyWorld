@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@fancyapps/ui": "^5.0.24",
     "ansi-colors": "^1.1.0",
     "ansi-gray": "^0.1.1",
     "ansi-regex": "^2.1.1",
@@ -169,6 +170,7 @@
     "next-tick": "^1.1.0",
     "normalize-package-data": "^2.5.0",
     "normalize-path": "^3.0.0",
+    "normalize.css": "^8.0.1",
     "now-and-later": "^2.0.1",
     "number-is-nan": "^1.0.1",
     "object-copy": "^0.1.0",
